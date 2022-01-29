@@ -28,9 +28,10 @@ string = 'The quick brown fox jumps over  the lazy dog';
 
 console.log(string.split(''));
 
+const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 function isPangra(string) {
     string = string.toLowerCase();
-    return 'abcdefghijklmnopqrstuvwxyz'.split('').every(function (x) {
+    return alphabet.split('').every(function (x) {
         return string.indexOf(x) !== -1;
     });
 }
